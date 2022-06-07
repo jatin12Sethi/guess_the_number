@@ -48,14 +48,14 @@ def play_game():
         
         result = "Your guess is incorrect. Try Again!"
         if target < choice:
-            hint = "The number lies between 0 & {}".format(result)
+            hint = "The number lies between 0 & {}".format(choice)
             
         else:
             hint = "The number lies between {} & {}".format(choice, upper)
         result += "\n\nHint:\n" + hint
         
     else:
-        result = "You guess it coreectly in {} tries".format(retry_attempt)
+        result = "You guess it correctly in {} tries".format(retry_attempt)
         guess_button.configure(state="disabled")
         result += "\n\nHint:\n" + "Click 'Play' to start a new round"
     
