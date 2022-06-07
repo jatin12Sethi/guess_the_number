@@ -51,7 +51,7 @@ def play_game():
             hint = "The number lies between 0 & {}".format(result)
             
         else:
-            hint = "The number lies between {} & 1000".format(choice)
+            hint = "The number lies between {} & {}".format(choice, upper)
         result += "\n\nHint:\n" + hint
         
     else:
